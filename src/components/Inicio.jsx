@@ -1,6 +1,6 @@
 import foto from "../img/FrancoNew.png";
 import "../css/inicio.css";
-import cv from "../components/others/CvDeveloperA.pdf";
+import cv from "../components/others/CvYanFranco.pdf";
 
 const Inicio = () => {
     return (
