@@ -144,4 +144,8 @@
     .Container-Nav #inicio .contenido .presentacion h2 {
         font-size: 40px;
     }
+    .Container-Nav .inicio .contenido .presentacion .descripcion{
+        margin: 25px 20px;
+        
+    }
 }
