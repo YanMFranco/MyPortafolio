@@ -1,0 +1,75 @@
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.container-Proyectos {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.container-Proyectos .proyecto {
+    max-width: 500px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-Proyectos img{
+    width: 300px;
+    height: 300px;
+    box-shadow:0 0 20px 0 rgba(255,255,255,.55);
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+    border-radius: 50px;
+    margin: 20px 10px;
+}
+
+.container-Proyectos .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+.container-Proyectos .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+.container-Proyectos .proyecto .info p a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-Proyectos .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .proyecto {
+        margin: 10px auto;
+    }
+}
